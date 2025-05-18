@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.png" sizes="48x48" />
+
+    <!-- Icon -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <app-header></app-header>
+    <main>
+      <div class="container">
+        <section class="input-card">
+          <h2>Create New Note</h2>
+          <note-form></note-form>
+        </section>
+        <section class="list-card">
+          <h2>List of Notes</h2>
+          <note-list></note-list>
+        </section>
+        <section class="list-card">
+          <h2>Archived Notes</h2>
+          <note-list archived="true"></note-list>
+        </section>
+      </div>
+    </main>
+    <app-footer></app-footer>
+  </body>
+</html>
