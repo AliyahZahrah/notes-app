@@ -1,5 +1,6 @@
-import api from '../data/utils/notes-api.js';
 import Swal from 'sweetalert2';
+
+import api from '../data/utils/notes-api.js';
 
 class NoteList extends HTMLElement {
   constructor() {
